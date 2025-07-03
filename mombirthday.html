@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Mommy></title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <!-- Floating Balloons -->
+    <div class="balloons">
+        <div class="balloon balloon-1"></div>
+        <div class="balloon balloon-2"></div>
+        <div class="balloon balloon-3"></div>
+        <div class="balloon balloon-4"></div>
+        <div class="balloon balloon-5"></div>
+    </div>
+
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="card-container">
+            <!-- Card -->
+            <div class="birthday-card" id="birthdayCard">
+                <!-- Card Front -->
+                <div class="card-front">
+                    <div class="card-content">
+                        <h1 class="title">Happy Birthday</h1>
+                        <p class="subtitle">To my pyari pupi</p>
+                        
+                        <!-- Heart Button -->
+                        <div class="heart-container">
+                            <div class="heart" id="heartBtn">❤️</div>
+                            <p class="heart-text">Click to open your card</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Back (Inside) -->
+                <div class="card-back">
+                    <div class="card-inside">
+                        <div class="left-panel">
+                            <div class="mom-image">
+                                <img src="/mom.png" alt="Mom" id="momPhoto">
+                            </div>
+                            
+                            <div class="countdown-container">
+                                <h3>Birthday Countdown</h3>
+                                <div class="countdown-display" id="countdownDisplay">
+                                    <div class="countdown-unit">
+                                        <span class="number" id="countdownHours">0</span>
+                                        <span class="label">Hours</span>
+                                    </div>
+                                    <div class="countdown-unit">
+                                        <span class="number" id="countdownMinutes">0</span>
+                                        <span class="label">Minutes</span>
+                                    </div>
+                                    <div class="countdown-unit">
+                                        <span class="number" id="countdownSeconds">0</span>
+                                        <span class="label">Seconds</span>
+                                    </div>
+                                </div>
+                                <p class="countdown-message" id="countdownMessage">Until you turn 43!</p>
+                            </div>
+                        </div>
+
+                        <div class="right-panel">
+                            <div class="birthday-message">
+                                <h2>My Dearest Mommy</h2>
+                                <p>Every moment with you has been a blessing in my life. Your love, khana and endless support have shaped who I am today. Thank you for being not just my mother, but my friend, my inspiration, and the love of my life.</p>
+                                
+                                <div class="cake-container">
+                                    <img src="/vijay2.png" alt="Birthday Cake" class="cake-image" id="cakeBtn">
+                                    <p class="cake-text">Happy Birthday Poonam - Vijay</p>
+                                </div>
+                                
+                                <p class="signature">With all my love,<br>Piyusha ❤️</p>
+                            </div>
+                        </div>
+
+                        <!-- Close button -->
+                        <button class="close-btn" id="closeBtn">×</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confetti Container -->
+    <div class="confetti-container" id="confettiContainer"></div>
+
+    <!-- Audio Elements -->
+    <audio id="openSound" preload="auto">
+        <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLFfg+pRBDNscsNuD" type="audio/wav">
+    </audio>
+    
+    <audio id="birthdayMusic" loop>
+        <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLFfg" type="audio/wav">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
